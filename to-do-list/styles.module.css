@@ -1,0 +1,57 @@
+.containerCreateArea {
+  /* border: 2px solid black; */
+  margin: auto;
+  margin-bottom: 15px;
+  width: 350px;
+  background-color: white;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.6);
+  border-radius: 4%;
+  position: relative;
+}
+.buttonCreateArea {
+  position: absolute;
+  bottom: -15px;
+  right: 20px;
+  cursor: pointer;
+}
+.containerNote {
+  /* border: 2px solid black; */
+  /* margin: auto; */
+  padding: 10px;
+  margin: 2%;
+  width: 200px;
+  background-color: white;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 4%;
+  position: relative;
+}
+.buttonNote {
+  position: absolute;
+  bottom: 5px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.notesContainer {
+  justify-content: center;
+  max-width: 100%;
+  margin: 0 auto;
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 600px) {
+  .notesContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 709px) {
+  .notesContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 1100px) {
+  .notesContainer {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
